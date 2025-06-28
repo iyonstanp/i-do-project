@@ -3,92 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="I Do Project – Final Year Project Help for Students in AI, IoT, Web, and Blockchain." />
-  <meta name="keywords" content="i do project, idoproject.in, student projects, final year, AI, IoT, web, embedded, blockchain" />
+  <meta name="description" content="I Do Project – Final Year Project Help for Students in AI, IoT, Web, and Embedded Systems." />
+  <meta name="keywords" content="i do project, final year projects, AI projects, IoT projects, idoproject.in, student project support" />
   <meta name="author" content="I Do Project Team" />
-  <title>I Do Project – Final Year Project Help</title>
+  <title>I Do Project – Student Project Support</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      scroll-behavior: smooth;
+      margin: 0;
+      background: #f4f8fb;
+      color: #333;
+      line-height: 1.6;
     }
-
     header {
-      background: linear-gradient(to right, #004aad, #0074e4);
+      background: url('https://images.unsplash.com/photo-1633470437749-2f1a5b09ce04?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
-      padding: 60px 20px;
+      padding: 100px 20px;
       text-align: center;
-      animation: fadeInDown 1s ease-out;
     }
-
     header h1 {
       font-size: 3em;
-      margin-bottom: 10px;
+      margin-bottom: 0.5em;
     }
-
     header p {
       font-size: 1.2em;
     }
-
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background: #0074e4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
-      text-align: center;
-      animation: fadeIn 1.5s ease-in;
+      padding: 40px 20px;
     }
-
     h2 {
-      color: #004aad;
       font-size: 2em;
+      margin-bottom: 20px;
+      color: #004aad;
     }
-
-    ul {
-      list-style: none;
-      padding: 0;
+    .services, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-
-    ul li {
-      margin: 10px 0;
-      font-size: 1.1em;
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 260px;
+      text-align: center;
     }
-
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+    .card p {
+      padding: 0 15px 20px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
     a {
       color: #0077cc;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2em;
-      }
-      section {
-        padding: 30px 10px;
+      .services, .projects {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -98,35 +99,73 @@
   <header>
     <h1>I Do Project</h1>
     <p>Final Year Project Help & Solutions in AI, IoT, Web, Embedded & More</p>
+    <a href="#contact" class="btn">Get Started</a>
   </header>
 
-  <section id="about">
+  <section>
     <h2>🚀 About Us</h2>
-    <p>We help students build academic and final-year projects using cutting-edge technologies like Artificial Intelligence, IoT, Web Development, Blockchain, Embedded Systems and more.</p>
+    <p>We help students build academic and final-year projects using cutting-edge technologies like Artificial Intelligence, IoT, Web Development, Blockchain, and Embedded Systems. With expert guidance and practical kits, we simplify your journey from idea to implementation.</p>
   </section>
 
-  <section id="services">
-    <h2>🛠️ Our Services</h2>
-    <ul>
-      <li>✔️ Final Year Project Development</li>
-      <li>✔️ IoT and AI Project Kits</li>
-      <li>✔️ Custom Arduino / Raspberry Pi Solutions</li>
-      <li>✔️ Web and Mobile App Prototypes</li>
-    </ul>
+  <section>
+    <h2>⚙️ Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?laptop,code" alt="Project Dev">
+        <h3>Final Year Project Development</h3>
+        <p>We guide and build high-quality final year projects for engineering, diploma, and computer science students.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?robot,technology" alt="IoT Kits">
+        <h3>IoT & AI Project Kits</h3>
+        <p>Ready-to-use kits with code, documentation, and remote support for students & institutions.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?arduino,raspberrypi" alt="Custom Solutions">
+        <h3>Custom Arduino / Raspberry Pi</h3>
+        <p>Custom embedded projects tailored to real-time applications in industries and smart homes.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?mobile,app" alt="App Prototypes">
+        <h3>Web & Mobile App Prototypes</h3>
+        <p>Build frontend and backend mini apps using React, Flutter, Node.js and Firebase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📷 Recent Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?microcontroller,pcb" alt="PCB Project">
+        <h3>Smart Health Monitoring</h3>
+        <p>An IoT-powered health tracker with real-time temperature, BPM & humidity display.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?robotics,car" alt="Robot Car">
+        <h3>Obstacle Avoiding Robot</h3>
+        <p>Fully autonomous robot using ultrasonic sensors with Arduino UNO.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?data,server" alt="Blockchain">
+        <h3>Blockchain Data Logger</h3>
+        <p>Encrypt & store sensor data in Ethereum using smart contracts & Web3.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>📢 Connect With Us</h2>
-    <p>Follow us or reach out for project discussions and support.</p>
-    <ul>
+    <p>Follow us or contact us for any queries and project needs!</p>
+    <ul style="list-style: none; padding-left: 0;">
       <li>📷 Instagram: <a href="https://instagram.com/idoproject_" target="_blank">@idoproject_</a></li>
-      <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/i-do-project" target="_blank">i do project</a></li>
+      <li>💼 LinkedIn: <a href="https://linkedin.com/in/i-do-project" target="_blank">i do project</a></li>
       <li>📧 Email: <a href="mailto:idoproject.info@gmail.com">idoproject.info@gmail.com</a></li>
     </ul>
   </section>
 
   <footer>
-    &copy; 2025 I Do Project. All rights reserved. | <a href="https://idoproject.in">idoproject.in</a>
+    &copy; 2025 I Do Project. All rights reserved | <a href="https://idoproject.in">idoproject.in</a>
   </footer>
 
 </body>
