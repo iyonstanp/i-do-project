@@ -3,38 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="I Do Project - Final Year Projects and Support for Students">
-  <meta name="keywords" content="I Do Project, student projects, final year, engineering projects, academic projects">
-  <meta name="author" content="I Do Project Team">
-  <title>I Do Project | Final Year Projects & Guidance</title>
+  <meta name="description" content="I Do Project – Final Year Project Help for Students in AI, IoT, Web, and Blockchain." />
+  <meta name="keywords" content="i do project, idoproject.in, student projects, final year, AI, IoT, web, embedded, blockchain" />
+  <meta name="author" content="I Do Project Team" />
+  <title>I Do Project – Final Year Project Help</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
-      color: #333;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      scroll-behavior: smooth;
     }
+
     header {
-      background-color: #004aad;
+      background: linear-gradient(to right, #004aad, #0074e4);
       color: white;
-      padding: 30px 10px;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
+
+    header p {
+      font-size: 1.2em;
+    }
+
     section {
-      padding: 30px 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
     }
+
+    h2 {
+      color: #004aad;
+      font-size: 2em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
-      background-color: #222;
+      background: #222;
       color: white;
+      text-align: center;
       padding: 20px;
-      font-size: 14px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      section {
+        padding: 30px 10px;
+      }
     }
   </style>
 </head>
@@ -42,37 +97,36 @@
 
   <header>
     <h1>I Do Project</h1>
-    <p>Helping Students with Final Year Projects, Mini Projects & More</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Final Year Project Help & Solutions in AI, IoT, Web, Embedded & More</p>
   </header>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>I Do Project is a platform where students can find help with academic, mini, and final-year projects in AI, IoT, Web, Blockchain, and more.</p>
+    <h2>🚀 About Us</h2>
+    <p>We help students build academic and final-year projects using cutting-edge technologies like Artificial Intelligence, IoT, Web Development, Blockchain, Embedded Systems and more.</p>
   </section>
 
   <section id="services">
-    <h2>Our Services</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li>✔️ Final Year Project Guidance</li>
-      <li>✔️ Ready-made Project Kits</li>
-      <li>✔️ Custom Project Development</li>
-      <li>✔️ Arduino, Raspberry Pi, IoT, AI Projects</li>
+    <h2>🛠️ Our Services</h2>
+    <ul>
+      <li>✔️ Final Year Project Development</li>
+      <li>✔️ IoT and AI Project Kits</li>
+      <li>✔️ Custom Arduino / Raspberry Pi Solutions</li>
+      <li>✔️ Web and Mobile App Prototypes</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:idoproject.info@gmail.com"idoproject.info@gmail.com</a></p>
-    <p>Phone: +91-8111080117</p>
+    <h2>📢 Connect With Us</h2>
+    <p>Follow us or reach out for project discussions and support.</p>
+    <ul>
+      <li>📷 Instagram: <a href="https://instagram.com/idoproject_" target="_blank">@idoproject_</a></li>
+      <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/i-do-project" target="_blank">i do project</a></li>
+      <li>📧 Email: <a href="mailto:idoproject.info@gmail.com">idoproject.info@gmail.com</a></li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 I Do Project. All Rights Reserved.</p>
+    &copy; 2025 I Do Project. All rights reserved. | <a href="https://idoproject.in">idoproject.in</a>
   </footer>
 
 </body>
